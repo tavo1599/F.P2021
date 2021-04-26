@@ -14,6 +14,5 @@ class AreaTriangulo{
     area=(b*h)/2;
     //Datos de salida
     System.out.println("El area es:"+area);
-
   }  
 }
