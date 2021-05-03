@@ -1,6 +1,6 @@
 *.replit
 *.class
-**/*
+#**/*
 !**/*.go
 !**/*.java
 !**/*.py
@@ -9,3 +9,4 @@
 !**/*.scala
 !**/*.cpp
 !**/*.kt
+!**/*ejercicios
