@@ -18,8 +18,3 @@ def muestraMenoredad():
   p2edad=int(input("Ingrese edad 2da persona"))
   p3nombre=input("Ingrese nombre 3ra persona")
   p3edad=int(input("Ingrese edad 3ra persona"))
-  # Proceso
-
-  
-
-Ejercicios01()

@@ -8,4 +8,3 @@ print("multiplicacion:",a*b)
 c=4
 d=5
 print("operacion:",c+d*c+c)
-

@@ -1,9 +1,11 @@
-# Datos de entrada 
-horas=int(input("Horas de estacionamiento: "))
-# proceso
-if horas<=2:
-  horas=horas*5
-  print("monto a pagar: ", horas)
-if horas>=3 and horas<=5:
-  horas=(horas<=2*5) + (horas>=3 and horas<=5*4)
-  print("monto a pagar: ", horas)
+# Datos de entrada
+precio=int(input("Ingrese el precio: "))
+# Proceso
+if precio>=200:
+ descuento=precio*0.15
+elif precio>100 and precio<200:
+  descuento=precio*0.12
+elif precio<100:
+  descuento=precio*0.10
+# Datos de salida
+print("Total de descuento: ", "$", precio-descuento)

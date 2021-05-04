@@ -7,4 +7,4 @@ edadx=int(input("ingrese su edad:"))
 if edadx>=70:
   print("Usted Si se encuentra exonerado")
 elif edadx<70:
-    print("Usted No se encuentra exonerado")
+  print("Usted No se encuentra exonerado")
