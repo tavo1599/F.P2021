@@ -60,10 +60,13 @@ public class Repasojava {
       }       
 
     public static void menuMain(){
+    
         String mensaje="Seleccion el algoritmo que desea ejecutar:"+
         "\n1=suma10NumerosMientras"+
         "\n2=suma10NumerosHacerMientras "+
         "\n3=suma10NumerosPara"+
+        "\n4=numerosParesHasta100"+
+        "\n5=numeroFibonaci"+
         "\n0=Salir del programa";
         
         System.out.println(mensaje);
@@ -74,12 +77,36 @@ public class Repasojava {
                 case 1: suma10NumerosMientras();break;
                 case 2: suma10NumerosHacerMientras();;break;
                 case 3: suma10NumerosParaHasta();;break;
-                case 4: suma10NumerosMientras();break;
+                case 4: numerosParesHasta100();break;
+                case 5: numeroFibonaci();break;
             }
             if(opcion!=0)
             System.out.println("\n Desea seguir probando: "+mensaje);
             
         }while(opcion!=0);        
+    }
+    public static void numerosParesHasta100(){
+        for(int contador=0;contador<100; contador++){
+            if(contador%2==0){
+                System.out.println("El numero "+contador+"es numero par");
+            }
+        }
+    }
+    public static void numeroFibonaci(){
+        int numAnt=0;
+        int numNue=1;
+        int numTem=0;
+        int contador=1;
+        System.out.println("Numero Fibonaci");
+        int numFinal=teclado.nextInt();
+        while(contador<numFinal){
+            numTem=numNue;
+            numNue=numAnt+numNue;
+            numAnt=numTem;
+            contador++;
+
+        }
+        System.out.println("Numero Fibonaci de "+numFinal+" es: "+numNue);
     }
     public static void main(String[] args) {
     menuMain();
