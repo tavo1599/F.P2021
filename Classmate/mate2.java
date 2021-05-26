@@ -110,7 +110,7 @@ public class mate2 {
         System.out.println("Valor de beca: " + beca);
     }
 
-    static void equilateros(){
+    static void triangulo(){
         double ladoa, ladob, ladoc;
         System.out.println("Ingresa el valor de lado a: ");
         ladoa = tl.nextDouble();
@@ -139,7 +139,7 @@ public class mate2 {
         // ejercicio5();
         // ejercicio6();
         // ejercicio7();
-        // tarea1();
-        equilateros();
+        // beca();
+        triangulo();
     }
 }
