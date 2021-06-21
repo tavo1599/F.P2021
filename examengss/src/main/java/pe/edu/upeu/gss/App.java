@@ -15,10 +15,10 @@ public class App
          
         while(!salir){
              
-            System.out.println("1. Opcion 1");
-            System.out.println("2. Opcion 2");
-            System.out.println("3. Opcion 3");
-            System.out.println("4. Opcion 4");
+            System.out.println("1. Impuesto de autos");
+            System.out.println("2. tabla de multiplicar");
+            System.out.println("3. Numero perfecto");
+            System.out.println("4. Potencia");
             System.out.println("5. Salir");
              
             System.out.println("Escribe una de las opciones");
@@ -36,7 +36,7 @@ public class App
                     break;
                  case 3:
                     System.out.println("Has seleccionado la opcion 3");
-                    gustavo.sumaNumeros();
+                    gustavo.numerosPerfectos();
                     break;
                 case 4:
                     System.out.println("Has seleccionado la opcion 4");

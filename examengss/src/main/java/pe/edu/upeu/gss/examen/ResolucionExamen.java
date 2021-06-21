@@ -49,30 +49,30 @@ public class ResolucionExamen{
     }
 
     public static void tablaMultiplicar() {
-        int i, numero, resultado;
-        System.out.println("Ingrese un numero: ");
-        numero = in.nextInt();
-        for (i=1; i<=10; i++) {
-            resultado = i * numero;
-            System.out.println(numero + " x " + i + " = " + resultado);
+        for(int i = 1 ; i<= 20 ; i++){
+            for(int j = 0 ; j<=10 ; j++ ){
+                System.out.println(i+"*"+j+"="+i*j);
+            }
+            System.out.println();
         }
     }
-    public static void sumaNumeros(){
-        int numero=0;
-        int sumas=0, menor=0, Mayor=numero;
-        while ( menor < Mayor ) {
-            Mayor = numero / menor;
-            if ( numero % menor == 0 ) 
-                sumas += menor;
-            if ( Mayor != menor && numero % Mayor == 0 )
-                sumas += Mayor;
-            
-	}
-        if (sumas == numero) {
-            System.out.println("El numero "+numero+" es un numero perfecto;");
-        } else {
-            System.out.println("El numero "+numero+" no es un numero perfecto;");
+    public static void numerosPerfectos(){
+        int i, suma = 0, n;
+        System.out.println("Introduce un número: ");
+        n = in.nextInt();
+        for (i = 1; i < n; i++) {  // i son los divisores. Se divide desde 1 hasta n-1                            
+            if (n % i == 0) {
+                suma = suma + i;   // si es divisor se suma
+            }
         }
+        if (suma == n) {           // si el numero es igual a la suma de sus divisores es perfecto                
+            System.out.println("Perfecto");
+        } else {
+            System.out.println("No es perfecto");
+
+        }
+        
+
     }
 
     public static void potencia(){
